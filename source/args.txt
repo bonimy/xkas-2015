@@ -1,0 +1,28 @@
+/pm[+|-]				print messages
+/pw[+|-]				print warnings
+/pe[+|-]				print errors
+/mf:"TEXT"				message format
+/mw:"TEXT"				warning format
+/me:"TEXT"				error format
+/we:[code1|code2|...]			treat warnings as errors
+/define:[def1[=val1]|def2[=val2]|...]	include additional defines
+/dir:"DIRECTORY"			primary directory
+/main:"MAIN"				main asm file
+/src:"SRC"				source rom
+/dest:"DEST"				dest rom
+/args:["ARGS1"|"ARGS2"|...]		additional command line arguments
+/asm:[fusion|xkas|asar]			starting assembly format
+/lc[+|-]				use lunar compress
+/dw:[code1|code2|...]			disable warnings
+/iw:[code1|code2|...]			include warnings
+/exe:"PATH"|"ARGS"			use another program
+/print:["MSG1"|"MSG2"|...]		print messages to console
+/strict:[fusion|xkas|asar]		strictly assemble in given format (may not be needed if warning code is used)
+/threading[+|-]				use multithreading for assembly (maybe) [?]
+/stresc[+|-]				string escape sequences (\t, \", \', \0, etc.)
+/ovr[+|-]				override internal command line args
+/xcase[+|-]				hex upper or lower case
+/xformat[+|-]				address formatting
+/stderr[+|-]				print errors to stderr
+/stdout[+|-]				print errors to stdout
+/O3[+|-]				optimize for space (do a third pass)

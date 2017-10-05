@@ -1,0 +1,22 @@
+#if USEROM
+
+#define ROMPATH %rompath
+
+.baserom	ROMPATH
+
+#else
+
+.header
+.irq IRQVECTOR
+.reset RESETVECTOR
+.fastrom
+.lorom
+
+#endif
+
+.code
+RESETVECTOR:
+	LDA.w #$00
+	STA.b $00
+.loop
+	JMP.w .loop
